@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+/* ***********FrameWork************* */
+.god{
+    background-color: rgb(234, 199, 28);
+}
+
+.black{
+    background-color: black;
+}
+.center{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* *********fim-framework******* */
+
+.fundo{
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    opacity: 1;
+}
+
+section.page_home{
+    background-image: url('/img/fundoCoin.png');
+    background-size: 100% 100%;
+    height: 500px;
+    width: 100%;
+    opacity: 0.5;
+    
+}
+
+header{
+    width: 100%;
+    
+}
+
+.topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
