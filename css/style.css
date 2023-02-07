@@ -36,7 +36,7 @@ section.page_home{
     background-size: 100% 100%;
     height: 500px;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.3;
     z-index: 0;
     
 }
@@ -120,18 +120,61 @@ nav.menu_desktop li > a:hover{
 }
 
 section.center_cambio{
-    z-index: 2;
     width: 70%;
-    height: 400px;
-    background-color: blue;
-    margin: 0 auto;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 280px auto;
     
 }
 
 .coins_cambio{
-    width: 60%;
-    background-color: white;
+    width: 90%;
+    background-color: rgb(88, 25, 175);
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 25px 5px;
+    position: relative;
+    top: 20px;
+    background-color: rgba(211, 210, 210, 0.445);
+    border: 1px solid rgb(167, 165, 165);
+    
    
+}
+
+.coins_cambio > label{
+    position: relative;
+    top: -32px;
+    left: 128px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.coins_cambio select, input{
+    margin-top: 20px;
+    padding: 6px;
+}
+
+.coins_cambio > input#valor_coin{
+    width: 80px;
+    text-align: center;
+}
+
+.coins_cambio > label#title_value{
+    left: 100px;
+}
+
+#button_converter{
+    margin: 50px 0;
+    position: relative;
+    left: 400px;
+    padding: 8px 50px;
+    border-radius: 30px;
+    border: 1px solid rgb(197, 197, 197);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
 }
