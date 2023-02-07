@@ -37,6 +37,7 @@ section.page_home{
     height: 500px;
     width: 100%;
     opacity: 0.6;
+    z-index: 0;
     
 }
 
@@ -77,9 +78,17 @@ nav.menu_desktop li{
 nav.menu_desktop li > a{
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
+    transition: 0.8s;
+    
+}
+
+nav.menu_desktop li > a:hover{
+    color: black;
+    transition: 0.9s;
+    
 }
 
 .topo > input#login{
@@ -91,5 +100,38 @@ nav.menu_desktop li > a{
     font-weight: 600;
     background: none;
     color: goldenrod;
+    z-index: 1;
+    box-shadow: 0 0 4px #999;
+    background-position: center;
+    transition: background 0.8s;
     
+}
+
+.topo > input#login:hover{
+  background:#edb500 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  color: white;
+    
+}
+
+.topo > input#login:active{
+    background-color:#ecc412;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+section.center_cambio{
+    z-index: 2;
+    width: 70%;
+    height: 400px;
+    background-color: blue;
+    margin: 0 auto;
+    
+}
+
+.coins_cambio{
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px 0;
+   
 }
