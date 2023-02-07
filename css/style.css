@@ -36,7 +36,7 @@ section.page_home{
     background-size: 100% 100%;
     height: 500px;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.6;
     
 }
 
@@ -49,5 +49,47 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
+    margin-top: -580px;
+    
+    
+}
+
+.topo > img#logo{
+    width: 20em;
+    z-index: 1;
+}
+
+.topo > nav.menu_desktop{
+    z-index: 1;
+}
+
+nav.menu_desktop ul{
+   display: flex;
+}
+
+nav.menu_desktop li{
+    margin: 0 45px;
+    list-style-type: none;
+    
+}
+
+nav.menu_desktop li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.topo > input#login{
+    padding: 8px 50px;
+    border: 1px solid goldenrod;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    background: none;
+    color: goldenrod;
     
 }
