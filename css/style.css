@@ -143,6 +143,7 @@ section.center_cambio{
     background-color: rgba(211, 210, 210, 0.445);
     border: 1px solid rgb(167, 165, 165);
     
+    
    
 }
 
@@ -156,26 +157,27 @@ section.center_cambio{
     
 }
 
-.coins_cambio select, input{
+.coins_cambio select{
     margin-top: 20px;
-    padding: 6px;
+    padding: 6px 30px;
     font-size: 14px;
     font-weight: 500;
 }
 
-.coins_cambio > input#valor_coin{
+.coins_cambio > input{
     width: 80px;
     text-align: center;
+    padding: 6px;
 }
 
-.coins_cambio > label#title_value{
-    left: 100px;
-}
-
-#button_converter{
-    margin: 50px 0;
+.coins_cambio label{
     position: relative;
-    left: 400px;
+    left: 140px;
+    bottom: 20px;
+}
+
+button#swap{
+    margin-left: 100px;
     padding: 8px 50px;
     border-radius: 30px;
     border: 1px solid rgb(197, 197, 197);

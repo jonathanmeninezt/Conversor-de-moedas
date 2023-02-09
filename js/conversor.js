@@ -17,6 +17,15 @@ var endpoint = "https://api.apilayer.com/fixer/latest?symbols=BRL%2C%20EUR%2C%20
 
 var selectOne = document.querySelector("#selection_coin1").value;
 var selectTwo = document.querySelector("#selection_coin2").value;
+var inputValue = document.querySelector("#valor_coin").value;
+
+
+function click(){
+    var buttonConver = document.querySelector("#button_converter").addEventListener("click", conversor);
+    alert('clicado');
+}
+
+
 
 function conversor(){
     fetch(endpoint)

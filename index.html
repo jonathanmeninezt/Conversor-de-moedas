@@ -33,35 +33,18 @@
     <section class="center_cambio">
         <div class="center">
             <div class="coins_cambio">
-                
                 <label>Escolha uma moeda</label>
-                    <select id="selection_coin1" name="selection_coin">
-                        <option value=""  disabled selected>Selecione</option>
-                        <option id="BRL" value="1">Real</option>
-                        <option id="USD" value="2">Dólar</option>
-                        <option id="ARS" value="3">Peso Argentino</option>
-                        <option id="CLP" value="4">Peso Chileno</option> 
-                        <option id="EUR" value="5">Euro</option> 
-                        <option id="CBP" value="6">Libra</option> 
-                    </select><!--selection_coin-->
-           
-            
-                <label id="title_value">Valor desejado</label>
-                    <input id="valor_coin" type="text" name="valor_coin"> 
+                    <select id="from_currency" name="from_currency"></select>
+                    <input id="from_ammount" type="number" value="1"> 
+
+                     <button id="swap">⇄</button>
 
                 <label>Converter para</label>
-                    <select id="selection_coin2" name="selection_coin">
-                        <option value=""  disabled selected>Selecione</option>
-                        <option id="BRL_1" value="1">Real</option>
-                        <option id="USD_2" value="2">Dólar</option>
-                        <option id="ARS_3" value="3">Peso Argentino</option>
-                        <option id="CLP_4" value="4">Peso Chileno</option> 
-                        <option id="EUR_5" value="5">Euro</option> 
-                        <option id="CBP_6" value="6">Libra</option> 
-                    </select><!--selection_coin-->    
+                    <select id="to_currency" name="to_currency"></select>
+                    <input id="to_ammount" type="number">  
             </div><!--coins_cambio-->
         </div><!--center-->  
-       <input id="button_converter" type="button" name="button_converter" value="Converter">
+      
     </section><!--center_cambio-->
     
     <script src="js/conversor.js"></script>
