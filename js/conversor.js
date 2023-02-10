@@ -25,6 +25,7 @@ const swap = document.getElementById('swap');
  swap.addEventListener('click',infoSwap);
 
 
+
 selection();
 
 function selection(){
@@ -41,34 +42,27 @@ function selection(){
    
 
     options = [];
+
     for(let [key, value] of Object.entries(currency)){
         options.push(`<option value='${key}'>${value}</option>`);
+    }
 
         selectOne.innerHTML = options.join('\n');
-        selectTwo.ineerHTML= options.join('\n');
+        selectTwo.innerHTML = options.join('\n');
 
+        // calculate();
     }
 
     function infoSwap(){
-        let temp = inputOne.value;
-        inputOne.value = inputTwo.value;
-        inputTwo.value = temp;
-        
+        let temp = selectOne.value;
+        selectOne.value = selectTwo.value;
+        selectTwo.value = temp;
+
+        // calculate();
     }
-}
 
 
 
-// function conversor(){
-//     fetch(endpoint)
-//     .then(response => response.json())
-//     .then(result => {
-//         const euroAmount = date.rates.BRL;
-//         const coinOne = selectOne.value;
-//         const coinTwo = (coinOne * euroAmount).toFixed(2);
-//         selectTwo.value = coinTwo;
-//     })
-    
-// }
 
-// document.querySelector("#button_converter").addEventListener("click", conversor);
+
+

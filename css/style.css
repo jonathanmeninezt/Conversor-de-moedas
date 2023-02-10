@@ -121,7 +121,7 @@ nav.menu_desktop li > a:hover{
 }
 
 section.center_cambio{
-    width: 70%;
+    width: 80%;
     height: 210px;
     background-color: rgb(255, 255, 255);
     margin: 280px auto;
@@ -157,9 +157,16 @@ section.center_cambio{
     
 }
 
-.coins_cambio select{
+.coins_cambio select#from_currency{
     margin-top: 20px;
-    padding: 6px 30px;
+    padding: 6px 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.coins_cambio select#to_currency{
+    margin-top: 20px;
+    padding: 6px 0px;
     font-size: 14px;
     font-weight: 500;
 }
