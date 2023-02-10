@@ -13,30 +13,62 @@
 //   .catch(error => console.log('error', error));
 
 
-var endpoint = "https://api.apilayer.com/fixer/latest?symbols=BRL%2C%20EUR%2C%20CLP%2C%20ARS%2C%20GBP%2C%20USD&base=USD";
+// var endpoint = "https://api.apilayer.com/fixer/latest?symbols=BRL%2C%20EUR%2C%20CLP%2C%20ARS%2C%20GBP%2C%20USD&base=USD";
 
-var selectOne = document.querySelector("#selection_coin1").value;
-var selectTwo = document.querySelector("#selection_coin2").value;
-var inputValue = document.querySelector("#valor_coin").value;
+const selectOne = document.getElementById('from_currency');
+const selectTwo = document.getElementById('to_currency');
+const inputOne = document.getElementById('from_ammount');
+const inputTwo = document.getElementById('to_ammount');
 
+const swap = document.getElementById('swap');
 
-function click(){
-    var buttonConver = document.querySelector("#button_converter").addEventListener("click", conversor);
-    alert('clicado');
-}
-
+ swap.addEventListener('click',infoSwap);
 
 
-function conversor(){
-    fetch(endpoint)
-    .then(response => response.json())
-    .then(result => {
-        const euroAmount = date.rates.BRL;
-        const coinOne = selectOne.value;
-        const coinTwo = (coinOne * euroAmount).toFixed(2);
-        selectTwo.value = coinTwo;
-    })
+selection();
+
+function selection(){
+    let currency = {
+        "BRL": "REAL",
+        "USD": "DOLAR",
+        "CBP": "LIBRA",
+        "EUR": "EURO",
+        "ARS": "PESO ARGENTINO",
+        "CLP": "PESO CHILENO"
+    }
     
+
+   
+
+    options = [];
+    for(let [key, value] of Object.entries(currency)){
+        options.push(`<option value='${key}'>${value}</option>`);
+
+        selectOne.innerHTML = options.join('\n');
+        selectTwo.ineerHTML= options.join('\n');
+
+    }
+
+    function infoSwap(){
+        let temp = inputOne.value;
+        inputOne.value = inputTwo.value;
+        inputTwo.value = temp;
+        
+    }
 }
 
-document.querySelector("#button_converter").addEventListener("click", conversor);
+
+
+// function conversor(){
+//     fetch(endpoint)
+//     .then(response => response.json())
+//     .then(result => {
+//         const euroAmount = date.rates.BRL;
+//         const coinOne = selectOne.value;
+//         const coinTwo = (coinOne * euroAmount).toFixed(2);
+//         selectTwo.value = coinTwo;
+//     })
+    
+// }
+
+// document.querySelector("#button_converter").addEventListener("click", conversor);
