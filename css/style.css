@@ -123,7 +123,7 @@ nav.menu_desktop li > a:hover{
 section.center_cambio{
     width: 80%;
     height: 210px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(228, 213, 171);
     margin: 280px auto;
     border-radius: 10px;
     border-top: 8px solid goldenrod;
@@ -162,6 +162,7 @@ section.center_cambio{
     padding: 6px 0px;
     font-size: 14px;
     font-weight: 500;
+    background-color: rgb(18, 174, 174);
 }
 
 .coins_cambio select#to_currency{
@@ -169,6 +170,7 @@ section.center_cambio{
     padding: 6px 0px;
     font-size: 14px;
     font-weight: 500;
+    background-color: rgb(156, 155, 160);
 }
 
 .coins_cambio > input{
@@ -181,7 +183,7 @@ section.center_cambio{
     position: relative;
     left: 140px;
     bottom: 20px;
-    text-transform: uppercase;
+    color: #ab9d1b;
     font-size: 12px;
 }
 
@@ -192,7 +194,7 @@ button#swap{
     border: 1px solid rgb(197, 197, 197);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
     background-color: green;
     color: white;
     cursor: pointer;
