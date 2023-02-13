@@ -41,7 +41,6 @@ function selection(){
         "EUR": "EURO",
         "ARS": "PESO ARGENTINO",
         "CLP": "PESO CHILENO",
-        "BTC": "BITCOIN",
         "CNY": "RENMINBI",
         "JPY": "YEN",
         "RUB": "RUBLE"
